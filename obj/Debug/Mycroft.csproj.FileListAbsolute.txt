@@ -1,0 +1,79 @@
+C:\Users\Keivan\Desktop\Mycroft\bin\Debug\Mycroft.exe.config
+C:\Users\Keivan\Desktop\Mycroft\bin\Debug\Mycroft.exe
+C:\Users\Keivan\Desktop\Mycroft\bin\Debug\Mycroft.pdb
+C:\Users\Keivan\Desktop\Mycroft\obj\Debug\Mycroft.csprojAssemblyReference.cache
+C:\Users\Keivan\Desktop\Mycroft\obj\Debug\Mycroft.Properties.Resources.resources
+C:\Users\Keivan\Desktop\Mycroft\obj\Debug\Mycroft.csproj.GenerateResource.cache
+C:\Users\Keivan\Desktop\Mycroft\obj\Debug\Mycroft.csproj.CoreCompileInputs.cache
+C:\Users\Keivan\Desktop\Mycroft\obj\Debug\Mycroft.exe
+C:\Users\Keivan\Desktop\Mycroft\obj\Debug\Mycroft.pdb
+C:\Users\Keivan\Desktop\Mycroft\obj\Debug\Mycroft.Mycroft.resources
+C:\Users\Keivan\Desktop\Mycroft\obj\Debug\Mycroft.MycroftFaceRecognizer.resources
+C:\Users\Keivan\Desktop\Mycroft\bin\Debug\Interop.WMPLib.dll
+C:\Users\Keivan\Desktop\Mycroft\bin\Debug\Emgu.CV.xml
+C:\Users\Keivan\Desktop\Mycroft\bin\Debug\Emgu.CV.UI.xml
+C:\Users\Keivan\Desktop\Mycroft\bin\Debug\Emgu.Util.xml
+C:\Users\Keivan\Desktop\Mycroft\obj\Debug\Mycroft.csproj.CopyComplete
+C:\Users\Keivan\Desktop\Mycroft\obj\Debug\Interop.MediaPlayer.dll
+C:\Users\Keivan\Desktop\Mycroft\obj\Debug\Interop.WMPLib.dll
+C:\Users\Keivan\Desktop\Mycroft\obj\Debug\Mycroft.csproj.ResolveComReference.cache
+C:\Users\Keivan\Desktop\Mycroft\obj\Debug\Mycroft.MycroftInitialize.resources
+C:\Users\Keivan\Desktop\Mycroft\obj\Debug\Mycroft.MycroftWeatherForecast.resources
+C:\Users\Keivan\Desktop\Mycroft\obj\Debug\Mycroft.MycroftRectanguralSnip.resources
+C:\Users\Keivan\Desktop\Mycroft\obj\Debug\Mycroft.MycroftDashBoard.resources
+C:\Users\Keivan\Desktop\Mycroft\obj\Debug\Mycroft.MycroftCryptographer.resources
+C:\Users\Keivan\Desktop\Mycroft\obj\Debug\Interop.IWshRuntimeLibrary.dll
+E:\Mycroft\bin\Debug\Mycroft.exe.config
+E:\Mycroft\bin\Debug\Mycroft.exe
+E:\Mycroft\bin\Debug\Mycroft.pdb
+E:\Mycroft\bin\Debug\Interop.WMPLib.dll
+E:\Mycroft\bin\Debug\Emgu.CV.xml
+E:\Mycroft\bin\Debug\Emgu.CV.UI.xml
+E:\Mycroft\bin\Debug\Emgu.Util.xml
+E:\Mycroft\obj\Debug\Mycroft.csprojAssemblyReference.cache
+E:\Mycroft\obj\Debug\Interop.IWshRuntimeLibrary.dll
+E:\Mycroft\obj\Debug\Interop.MediaPlayer.dll
+E:\Mycroft\obj\Debug\Interop.WMPLib.dll
+E:\Mycroft\obj\Debug\Mycroft.csproj.ResolveComReference.cache
+E:\Mycroft\obj\Debug\Mycroft.MycroftDashBoard.resources
+E:\Mycroft\obj\Debug\Mycroft.MycroftCryptographer.resources
+E:\Mycroft\obj\Debug\Mycroft.MycroftFaceRecognizer.resources
+E:\Mycroft\obj\Debug\Mycroft.MycroftInitialize.resources
+E:\Mycroft\obj\Debug\Mycroft.Mycroft.resources
+E:\Mycroft\obj\Debug\Mycroft.MycroftPasswordManager.resources
+E:\Mycroft\obj\Debug\Mycroft.MycroftWeatherForecast.resources
+E:\Mycroft\obj\Debug\Mycroft.Properties.Resources.resources
+E:\Mycroft\obj\Debug\Mycroft.MycroftRectanguralSnip.resources
+E:\Mycroft\obj\Debug\Mycroft.csproj.GenerateResource.cache
+E:\Mycroft\obj\Debug\Mycroft.csproj.CoreCompileInputs.cache
+E:\Mycroft\obj\Debug\Mycroft.csproj.CopyComplete
+E:\Mycroft\obj\Debug\Mycroft.exe
+E:\Mycroft\obj\Debug\Mycroft.pdb
+C:\Users\Keivan\Desktop\C# Workspace\Mycroft\obj\Debug\Mycroft.csprojAssemblyReference.cache
+C:\Users\Keivan\Desktop\C# Workspace\Mycroft\obj\Debug\Interop.IWshRuntimeLibrary.dll
+C:\Users\Keivan\Desktop\C# Workspace\Mycroft\obj\Debug\Interop.MediaPlayer.dll
+C:\Users\Keivan\Desktop\C# Workspace\Mycroft\obj\Debug\Interop.WMPLib.dll
+C:\Users\Keivan\Desktop\C# Workspace\Mycroft\obj\Debug\Mycroft.csproj.ResolveComReference.cache
+C:\Users\Keivan\Desktop\C# Workspace\Mycroft\obj\Debug\Mycroft.MycroftDashBoard.resources
+C:\Users\Keivan\Desktop\C# Workspace\Mycroft\obj\Debug\Mycroft.MycroftFaceRecognizer.resources
+C:\Users\Keivan\Desktop\C# Workspace\Mycroft\obj\Debug\Mycroft.MycroftInitialize.resources
+C:\Users\Keivan\Desktop\C# Workspace\Mycroft\obj\Debug\Mycroft.Mycroft.resources
+C:\Users\Keivan\Desktop\C# Workspace\Mycroft\obj\Debug\Mycroft.MycroftWeatherForecast.resources
+C:\Users\Keivan\Desktop\C# Workspace\Mycroft\obj\Debug\Mycroft.Properties.Resources.resources
+C:\Users\Keivan\Desktop\C# Workspace\Mycroft\obj\Debug\Mycroft.MycroftRectanguralSnip.resources
+C:\Users\Keivan\Desktop\C# Workspace\Mycroft\obj\Debug\Mycroft.csproj.GenerateResource.cache
+C:\Users\Keivan\Desktop\C# Workspace\Mycroft\obj\Debug\Mycroft.csproj.CoreCompileInputs.cache
+C:\Users\Keivan\Desktop\C# Workspace\Mycroft\obj\Debug\Mycroft.exe
+C:\Users\Keivan\Desktop\C# Workspace\Mycroft\obj\Debug\Mycroft.pdb
+C:\Users\Keivan\Desktop\C# Workspace\Mycroft\bin\Debug\Mycroft.exe.config
+C:\Users\Keivan\Desktop\C# Workspace\Mycroft\bin\Debug\Mycroft.exe
+C:\Users\Keivan\Desktop\C# Workspace\Mycroft\bin\Debug\Mycroft.pdb
+C:\Users\Keivan\Desktop\C# Workspace\Mycroft\bin\Debug\Interop.WMPLib.dll
+C:\Users\Keivan\Desktop\C# Workspace\Mycroft\bin\Debug\Emgu.CV.xml
+C:\Users\Keivan\Desktop\C# Workspace\Mycroft\bin\Debug\Emgu.CV.UI.xml
+C:\Users\Keivan\Desktop\C# Workspace\Mycroft\bin\Debug\Emgu.Util.xml
+C:\Users\Keivan\Desktop\C# Workspace\Mycroft\obj\Debug\Mycroft.csproj.CopyComplete
+C:\Users\Keivan\Desktop\C# Workspace\Mycroft\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Keivan\Desktop\C# Workspace\Mycroft\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Keivan\Desktop\C# Workspace\Mycroft\bin\Debug\HtmlAgilityPack.xml
+C:\Users\Keivan\Desktop\C# Workspace\Mycroft\obj\Debug\Mycroft.MycroftNewsScraper.resources

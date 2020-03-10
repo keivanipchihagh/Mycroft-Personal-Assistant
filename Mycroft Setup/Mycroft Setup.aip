@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="16.1" version="16.1" Modules="simple" RootPath="." Language="en" Id="{A4CB64F3-9F2E-41EC-AEA1-3F9928B72CA0}">
+  <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
+    <ROW Name="HiddenItems" Value="AppXProductDetailsComponent;AppXDependenciesComponent;AppXAppDetailsComponent;AppXVisualAssetsComponent;AppXCapabilitiesComponent;AppXAppDeclarationsComponent;AppXUriRulesComponent;FixupComponent"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install Mycroft." ValueLocId="*"/>
+    <ROW Property="ARPNOMODIFY" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="ARPNOREPAIR" Value="1"/>
+    <ROW Property="ARPPRODUCTICON" Value="Icon.exe" Type="8"/>
+    <ROW Property="Manufacturer" Value="HackInSight"/>
+    <ROW Property="ProductCode" Value="1033:{4CD572A6-062D-496E-B272-A84AEB5EDD26} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Mycroft"/>
+    <ROW Property="ProductVersion" Value="2.0.4" Type="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{BE82C4F4-F64A-4622-AF11-3BAEBA55C1A8}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003 RTM, Windows XP/2003 SP1, Windows XP SP2 x86" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003 RTM, Windows XP/2003 SP1, Windows XP SP2 x86" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="Data_Dir" Directory_Parent="NewFolder_Dir" DefaultDir="Data"/>
+    <ROW Directory="NewFolder_Dir" Directory_Parent="APPDIR" DefaultDir="Mycroft"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="APPDIR" ComponentId="{5C173F11-78C4-4C6F-B811-E149B4AF60F5}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="AudioSwitcher.AudioApi.CoreAudio.dll" ComponentId="{C69634A3-8F58-4D7A-B4FF-159AAE76C598}" Directory_="NewFolder_Dir" Attributes="0" KeyPath="AudioSwitcher.AudioApi.CoreAudio.dll"/>
+    <ROW Component="AudioSwitcher.AudioApi.dll" ComponentId="{5DC97F3A-08CF-4F9F-94A8-B1F57A857000}" Directory_="NewFolder_Dir" Attributes="0" KeyPath="AudioSwitcher.AudioApi.dll"/>
+    <ROW Component="AxInterop.WMPLib.dll" ComponentId="{3889C810-0DF7-46EB-8D3C-92B0A73629C4}" Directory_="NewFolder_Dir" Attributes="0" KeyPath="AxInterop.WMPLib.dll"/>
+    <ROW Component="Emgu.CV.GPU.dll" ComponentId="{1ECF6938-0C19-42FA-B444-FDC6F6342936}" Directory_="NewFolder_Dir" Attributes="0" KeyPath="Emgu.CV.GPU.dll"/>
+    <ROW Component="Emgu.CV.ML.dll" ComponentId="{E0423AF7-C306-4BAB-96E3-95993917A85D}" Directory_="NewFolder_Dir" Attributes="0" KeyPath="Emgu.CV.ML.dll"/>
+    <ROW Component="Emgu.CV.UI.dll" ComponentId="{FD9F308B-680E-47E7-A4AD-847DA5EA2682}" Directory_="NewFolder_Dir" Attributes="0" KeyPath="Emgu.CV.UI.dll"/>
+    <ROW Component="Emgu.CV.UI.xml" ComponentId="{A6019C4C-F811-4880-8496-24697C1049AE}" Directory_="NewFolder_Dir" Attributes="0" KeyPath="Emgu.CV.UI.xml" Type="0"/>
+    <ROW Component="Emgu.CV.dll" ComponentId="{2962C8BE-4CC1-464E-9D7E-3A06D0F10760}" Directory_="NewFolder_Dir" Attributes="0" KeyPath="Emgu.CV.dll"/>
+    <ROW Component="Emgu.Util.dll" ComponentId="{EA58D2D5-5EE4-407B-8F66-B0A4E0435FB6}" Directory_="NewFolder_Dir" Attributes="0" KeyPath="Emgu.Util.dll"/>
+    <ROW Component="Gdi32.dll" ComponentId="{DAB43675-393F-495A-9AA6-A9FE90278CDB}" Directory_="NewFolder_Dir" Attributes="0" KeyPath="Gdi32.dll"/>
+    <ROW Component="Interop.WMPLib.dll" ComponentId="{CDD77477-B2C0-4D39-ABAA-4EB8FCDFCEF4}" Directory_="NewFolder_Dir" Attributes="0" KeyPath="Interop.WMPLib.dll"/>
+    <ROW Component="Mycroft.exe" ComponentId="{AB19EBFB-B9DA-4BDE-9315-86106BA4355F}" Directory_="NewFolder_Dir" Attributes="0" KeyPath="Mycroft.exe"/>
+    <ROW Component="ProductInformation" ComponentId="{93B6F446-28CA-47A8-8D2F-3535CE472952}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="cvaux110.dll" ComponentId="{3BC23A7E-E2CD-41AD-8061-82715B74AA62}" Directory_="NewFolder_Dir" Attributes="0" KeyPath="cvaux110.dll"/>
+    <ROW Component="cvextern.dll" ComponentId="{A37CF59A-3393-4FBD-A104-6090F2399180}" Directory_="NewFolder_Dir" Attributes="0" KeyPath="cvextern.dll"/>
+    <ROW Component="highgui110.dll" ComponentId="{DD167709-489C-4C7E-8200-608CC23E41E2}" Directory_="NewFolder_Dir" Attributes="0" KeyPath="highgui110.dll"/>
+    <ROW Component="mp3" ComponentId="{3A27811C-4147-4D0B-AFA0-4E7312C1CC63}" Directory_="Data_Dir" Attributes="0" KeyPath="mp3" Type="0"/>
+    <ROW Component="opencv_calib3d220.dll" ComponentId="{04A03937-FF36-45DD-9C5C-24A3AEE40F28}" Directory_="NewFolder_Dir" Attributes="0" KeyPath="opencv_calib3d220.dll"/>
+    <ROW Component="opencv_contrib220.dll" ComponentId="{FA995259-BC85-4BBD-85FE-D89FDBE4F130}" Directory_="NewFolder_Dir" Attributes="0" KeyPath="opencv_contrib220.dll"/>
+    <ROW Component="opencv_core220.dll" ComponentId="{759A4046-A19B-4EBB-8749-AA8AC98096A5}" Directory_="NewFolder_Dir" Attributes="0" KeyPath="opencv_core220.dll"/>
+    <ROW Component="opencv_features2d220.dll" ComponentId="{EEEB2217-B5C8-476C-A13D-8F15B4BEED9E}" Directory_="NewFolder_Dir" Attributes="0" KeyPath="opencv_features2d220.dll"/>
+    <ROW Component="opencv_ffmpeg220.dll" ComponentId="{9B6F5637-9F06-44F3-8FED-E1A092D66CAE}" Directory_="NewFolder_Dir" Attributes="0" KeyPath="opencv_ffmpeg220.dll"/>
+    <ROW Component="opencv_flann220.dll" ComponentId="{43F43743-A223-46A7-99D4-9817F9C4F341}" Directory_="NewFolder_Dir" Attributes="0" KeyPath="opencv_flann220.dll"/>
+    <ROW Component="opencv_gpu220.dll" ComponentId="{F81C2A40-FA39-4F19-8C6D-EC1A3534BA5B}" Directory_="NewFolder_Dir" Attributes="0" KeyPath="opencv_gpu220.dll"/>
+    <ROW Component="opencv_highgui220.dll" ComponentId="{90612815-F990-4A4D-90BF-B52BDB433A68}" Directory_="NewFolder_Dir" Attributes="0" KeyPath="opencv_highgui220.dll"/>
+    <ROW Component="opencv_imgproc220.dll" ComponentId="{F3C6789C-53A1-4C3E-9282-F7F8E6D88A43}" Directory_="NewFolder_Dir" Attributes="0" KeyPath="opencv_imgproc220.dll"/>
+    <ROW Component="opencv_legacy220.dll" ComponentId="{E77C9904-865C-4CF2-9508-C076E0E24B90}" Directory_="NewFolder_Dir" Attributes="0" KeyPath="opencv_legacy220.dll"/>
+    <ROW Component="opencv_ml220.dll" ComponentId="{F90E8E2A-AA3D-4AB1-85E3-BE409D639951}" Directory_="NewFolder_Dir" Attributes="0" KeyPath="opencv_ml220.dll"/>
+    <ROW Component="opencv_objdetect220.dll" ComponentId="{792B7A35-B434-4895-B7A2-20054DDBBC24}" Directory_="NewFolder_Dir" Attributes="0" KeyPath="opencv_objdetect220.dll"/>
+    <ROW Component="opencv_video220.dll" ComponentId="{B237B6EA-02AA-43D0-BE60-83D46648FAA8}" Directory_="NewFolder_Dir" Attributes="0" KeyPath="opencv_video220.dll"/>
+    <ROW Component="wininet.dll" ComponentId="{7BA279ED-EEB7-4ACE-B033-E4B01AC8BC31}" Directory_="NewFolder_Dir" Attributes="256" KeyPath="wininet.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="mp3" Component_="mp3" FileName="1.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\1.mp3" SelfReg="false"/>
+    <ROW File="mp3_1" Component_="mp3" FileName="10.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\10.mp3" SelfReg="false"/>
+    <ROW File="mp3_2" Component_="mp3" FileName="100.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\100.mp3" SelfReg="false"/>
+    <ROW File="mp3_3" Component_="mp3" FileName="101.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\101.mp3" SelfReg="false"/>
+    <ROW File="mp3_4" Component_="mp3" FileName="102.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\102.mp3" SelfReg="false"/>
+    <ROW File="mp3_5" Component_="mp3" FileName="103.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\103.mp3" SelfReg="false"/>
+    <ROW File="mp3_6" Component_="mp3" FileName="104.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\104.mp3" SelfReg="false"/>
+    <ROW File="mp3_7" Component_="mp3" FileName="105.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\105.mp3" SelfReg="false"/>
+    <ROW File="mp3_8" Component_="mp3" FileName="106.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\106.mp3" SelfReg="false"/>
+    <ROW File="mp3_9" Component_="mp3" FileName="107.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\107.mp3" SelfReg="false"/>
+    <ROW File="mp3_10" Component_="mp3" FileName="108.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\108.mp3" SelfReg="false"/>
+    <ROW File="mp3_11" Component_="mp3" FileName="109.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\109.mp3" SelfReg="false"/>
+    <ROW File="mp3_12" Component_="mp3" FileName="11.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\11.mp3" SelfReg="false"/>
+    <ROW File="mp3_13" Component_="mp3" FileName="110.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\110.mp3" SelfReg="false"/>
+    <ROW File="mp3_14" Component_="mp3" FileName="111.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\111.mp3" SelfReg="false"/>
+    <ROW File="mp3_15" Component_="mp3" FileName="112.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\112.mp3" SelfReg="false"/>
+    <ROW File="mp3_16" Component_="mp3" FileName="113.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\113.mp3" SelfReg="false"/>
+    <ROW File="mp3_17" Component_="mp3" FileName="114.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\114.mp3" SelfReg="false"/>
+    <ROW File="mp3_18" Component_="mp3" FileName="115.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\115.mp3" SelfReg="false"/>
+    <ROW File="mp3_19" Component_="mp3" FileName="116.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\116.mp3" SelfReg="false"/>
+    <ROW File="mp3_20" Component_="mp3" FileName="117.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\117.mp3" SelfReg="false"/>
+    <ROW File="mp3_21" Component_="mp3" FileName="118.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\118.mp3" SelfReg="false"/>
+    <ROW File="mp3_22" Component_="mp3" FileName="119.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\119.mp3" SelfReg="false"/>
+    <ROW File="mp3_23" Component_="mp3" FileName="12.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\12.mp3" SelfReg="false"/>
+    <ROW File="mp3_24" Component_="mp3" FileName="120.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\120.mp3" SelfReg="false"/>
+    <ROW File="mp3_25" Component_="mp3" FileName="121.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\121.mp3" SelfReg="false"/>
+    <ROW File="mp3_26" Component_="mp3" FileName="13.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\13.mp3" SelfReg="false"/>
+    <ROW File="mp3_27" Component_="mp3" FileName="14.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\14.mp3" SelfReg="false"/>
+    <ROW File="mp3_28" Component_="mp3" FileName="15.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\15.mp3" SelfReg="false"/>
+    <ROW File="mp3_29" Component_="mp3" FileName="16.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\16.mp3" SelfReg="false"/>
+    <ROW File="mp3_30" Component_="mp3" FileName="17.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\17.mp3" SelfReg="false"/>
+    <ROW File="mp3_31" Component_="mp3" FileName="18.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\18.mp3" SelfReg="false"/>
+    <ROW File="mp3_32" Component_="mp3" FileName="19.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\19.mp3" SelfReg="false"/>
+    <ROW File="mp3_33" Component_="mp3" FileName="2.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\2.mp3" SelfReg="false"/>
+    <ROW File="mp3_34" Component_="mp3" FileName="20.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\20.mp3" SelfReg="false"/>
+    <ROW File="mp3_35" Component_="mp3" FileName="21.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\21.mp3" SelfReg="false"/>
+    <ROW File="mp3_36" Component_="mp3" FileName="22.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\22.mp3" SelfReg="false"/>
+    <ROW File="mp3_37" Component_="mp3" FileName="23.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\23.mp3" SelfReg="false"/>
+    <ROW File="mp3_38" Component_="mp3" FileName="24.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\24.mp3" SelfReg="false"/>
+    <ROW File="mp3_39" Component_="mp3" FileName="25.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\25.mp3" SelfReg="false"/>
+    <ROW File="mp3_40" Component_="mp3" FileName="26.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\26.mp3" SelfReg="false"/>
+    <ROW File="mp3_41" Component_="mp3" FileName="27.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\27.mp3" SelfReg="false"/>
+    <ROW File="mp3_42" Component_="mp3" FileName="28.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\28.mp3" SelfReg="false"/>
+    <ROW File="mp3_43" Component_="mp3" FileName="29.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\29.mp3" SelfReg="false"/>
+    <ROW File="mp3_44" Component_="mp3" FileName="3.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\3.mp3" SelfReg="false"/>
+    <ROW File="mp3_45" Component_="mp3" FileName="30.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\30.mp3" SelfReg="false"/>
+    <ROW File="mp3_46" Component_="mp3" FileName="31.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\31.mp3" SelfReg="false"/>
+    <ROW File="mp3_47" Component_="mp3" FileName="32.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\32.mp3" SelfReg="false"/>
+    <ROW File="mp3_48" Component_="mp3" FileName="33.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\33.mp3" SelfReg="false"/>
+    <ROW File="mp3_49" Component_="mp3" FileName="34.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\34.mp3" SelfReg="false"/>
+    <ROW File="mp3_50" Component_="mp3" FileName="35.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\35.mp3" SelfReg="false"/>
+    <ROW File="mp3_51" Component_="mp3" FileName="36.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\36.mp3" SelfReg="false"/>
+    <ROW File="mp3_52" Component_="mp3" FileName="37.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\37.mp3" SelfReg="false"/>
+    <ROW File="mp3_53" Component_="mp3" FileName="38.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\38.mp3" SelfReg="false"/>
+    <ROW File="mp3_54" Component_="mp3" FileName="39.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\39.mp3" SelfReg="false"/>
+    <ROW File="mp3_55" Component_="mp3" FileName="4.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\4.mp3" SelfReg="false"/>
+    <ROW File="mp3_56" Component_="mp3" FileName="40.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\40.mp3" SelfReg="false"/>
+    <ROW File="mp3_57" Component_="mp3" FileName="41.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\41.mp3" SelfReg="false"/>
+    <ROW File="mp3_58" Component_="mp3" FileName="42.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\42.mp3" SelfReg="false"/>
+    <ROW File="mp3_59" Component_="mp3" FileName="43.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\43.mp3" SelfReg="false"/>
+    <ROW File="mp3_60" Component_="mp3" FileName="44.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\44.mp3" SelfReg="false"/>
+    <ROW File="mp3_61" Component_="mp3" FileName="45.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\45.mp3" SelfReg="false"/>
+    <ROW File="mp3_62" Component_="mp3" FileName="46.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\46.mp3" SelfReg="false"/>
+    <ROW File="mp3_63" Component_="mp3" FileName="47.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\47.mp3" SelfReg="false"/>
+    <ROW File="mp3_64" Component_="mp3" FileName="48.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\48.mp3" SelfReg="false"/>
+    <ROW File="mp3_65" Component_="mp3" FileName="49.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\49.mp3" SelfReg="false"/>
+    <ROW File="mp3_66" Component_="mp3" FileName="5.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\5.mp3" SelfReg="false"/>
+    <ROW File="mp3_67" Component_="mp3" FileName="50.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\50.mp3" SelfReg="false"/>
+    <ROW File="mp3_68" Component_="mp3" FileName="51.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\51.mp3" SelfReg="false"/>
+    <ROW File="mp3_69" Component_="mp3" FileName="52.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\52.mp3" SelfReg="false"/>
+    <ROW File="mp3_70" Component_="mp3" FileName="53.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\53.mp3" SelfReg="false"/>
+    <ROW File="mp3_71" Component_="mp3" FileName="54.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\54.mp3" SelfReg="false"/>
+    <ROW File="mp3_72" Component_="mp3" FileName="55.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\55.mp3" SelfReg="false"/>
+    <ROW File="mp3_73" Component_="mp3" FileName="56.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\56.mp3" SelfReg="false"/>
+    <ROW File="mp3_74" Component_="mp3" FileName="57.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\57.mp3" SelfReg="false"/>
+    <ROW File="mp3_75" Component_="mp3" FileName="58.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\58.mp3" SelfReg="false"/>
+    <ROW File="mp3_76" Component_="mp3" FileName="59.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\59.mp3" SelfReg="false"/>
+    <ROW File="mp3_77" Component_="mp3" FileName="6.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\6.mp3" SelfReg="false"/>
+    <ROW File="mp3_78" Component_="mp3" FileName="60.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\60.mp3" SelfReg="false"/>
+    <ROW File="mp3_79" Component_="mp3" FileName="61.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\61.mp3" SelfReg="false"/>
+    <ROW File="mp3_80" Component_="mp3" FileName="62.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\62.mp3" SelfReg="false"/>
+    <ROW File="mp3_81" Component_="mp3" FileName="63.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\63.mp3" SelfReg="false"/>
+    <ROW File="mp3_82" Component_="mp3" FileName="64.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\64.mp3" SelfReg="false"/>
+    <ROW File="mp3_83" Component_="mp3" FileName="65.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\65.mp3" SelfReg="false"/>
+    <ROW File="mp3_84" Component_="mp3" FileName="66.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\66.mp3" SelfReg="false"/>
+    <ROW File="mp3_85" Component_="mp3" FileName="67.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\67.mp3" SelfReg="false"/>
+    <ROW File="mp3_86" Component_="mp3" FileName="68.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\68.mp3" SelfReg="false"/>
+    <ROW File="mp3_87" Component_="mp3" FileName="69.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\69.mp3" SelfReg="false"/>
+    <ROW File="mp3_88" Component_="mp3" FileName="7.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\7.mp3" SelfReg="false"/>
+    <ROW File="mp3_89" Component_="mp3" FileName="70.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\70.mp3" SelfReg="false"/>
+    <ROW File="mp3_90" Component_="mp3" FileName="71.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\71.mp3" SelfReg="false"/>
+    <ROW File="mp3_91" Component_="mp3" FileName="72.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\72.mp3" SelfReg="false"/>
+    <ROW File="mp3_92" Component_="mp3" FileName="73.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\73.mp3" SelfReg="false"/>
+    <ROW File="mp3_93" Component_="mp3" FileName="74.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\74.mp3" SelfReg="false"/>
+    <ROW File="mp3_94" Component_="mp3" FileName="75.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\75.mp3" SelfReg="false"/>
+    <ROW File="mp3_95" Component_="mp3" FileName="76.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\76.mp3" SelfReg="false"/>
+    <ROW File="mp3_96" Component_="mp3" FileName="77.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\77.mp3" SelfReg="false"/>
+    <ROW File="mp3_97" Component_="mp3" FileName="78.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\78.mp3" SelfReg="false"/>
+    <ROW File="mp3_98" Component_="mp3" FileName="79.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\79.mp3" SelfReg="false"/>
+    <ROW File="mp3_99" Component_="mp3" FileName="8.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\8.mp3" SelfReg="false"/>
+    <ROW File="mp3_100" Component_="mp3" FileName="80.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\80.mp3" SelfReg="false"/>
+    <ROW File="mp3_101" Component_="mp3" FileName="81.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\81.mp3" SelfReg="false"/>
+    <ROW File="mp3_102" Component_="mp3" FileName="82.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\82.mp3" SelfReg="false"/>
+    <ROW File="mp3_103" Component_="mp3" FileName="83.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\83.mp3" SelfReg="false"/>
+    <ROW File="mp3_104" Component_="mp3" FileName="84.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\84.mp3" SelfReg="false"/>
+    <ROW File="mp3_105" Component_="mp3" FileName="85.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\85.mp3" SelfReg="false"/>
+    <ROW File="mp3_106" Component_="mp3" FileName="86.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\86.mp3" SelfReg="false"/>
+    <ROW File="mp3_107" Component_="mp3" FileName="87.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\87.mp3" SelfReg="false"/>
+    <ROW File="mp3_108" Component_="mp3" FileName="88.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\88.mp3" SelfReg="false"/>
+    <ROW File="mp3_109" Component_="mp3" FileName="89.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\89.mp3" SelfReg="false"/>
+    <ROW File="mp3_110" Component_="mp3" FileName="9.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\9.mp3" SelfReg="false"/>
+    <ROW File="mp3_111" Component_="mp3" FileName="90.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\90.mp3" SelfReg="false"/>
+    <ROW File="mp3_112" Component_="mp3" FileName="91.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\91.mp3" SelfReg="false"/>
+    <ROW File="mp3_113" Component_="mp3" FileName="92.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\92.mp3" SelfReg="false"/>
+    <ROW File="mp3_114" Component_="mp3" FileName="93.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\93.mp3" SelfReg="false"/>
+    <ROW File="mp3_115" Component_="mp3" FileName="94.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\94.mp3" SelfReg="false"/>
+    <ROW File="mp3_116" Component_="mp3" FileName="95.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\95.mp3" SelfReg="false"/>
+    <ROW File="mp3_117" Component_="mp3" FileName="96.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\96.mp3" SelfReg="false"/>
+    <ROW File="mp3_118" Component_="mp3" FileName="97.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\97.mp3" SelfReg="false"/>
+    <ROW File="mp3_119" Component_="mp3" FileName="98.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\98.mp3" SelfReg="false"/>
+    <ROW File="mp3_120" Component_="mp3" FileName="99.mp3" Attributes="0" SourcePath="..\bin\Debug\Data\99.mp3" SelfReg="false"/>
+    <ROW File="AudioSwitcher.AudioApi.CoreAudio.dll" Component_="AudioSwitcher.AudioApi.CoreAudio.dll" FileName="AUDIOS~1.DLL|AudioSwitcher.AudioApi.CoreAudio.dll" Attributes="0" SourcePath="..\bin\Debug\AudioSwitcher.AudioApi.CoreAudio.dll" SelfReg="false"/>
+    <ROW File="AudioSwitcher.AudioApi.dll" Component_="AudioSwitcher.AudioApi.dll" FileName="AUDIOS~2.DLL|AudioSwitcher.AudioApi.dll" Attributes="0" SourcePath="..\bin\Debug\AudioSwitcher.AudioApi.dll" SelfReg="false"/>
+    <ROW File="AxInterop.WMPLib.dll" Component_="AxInterop.WMPLib.dll" FileName="AXINTE~1.DLL|AxInterop.WMPLib.dll" Attributes="0" SourcePath="..\bin\Debug\AxInterop.WMPLib.dll" SelfReg="false"/>
+    <ROW File="cvaux110.dll" Component_="cvaux110.dll" FileName="cvaux110.dll" Attributes="0" SourcePath="..\bin\Debug\cvaux110.dll" SelfReg="false"/>
+    <ROW File="cvextern.dll" Component_="cvextern.dll" FileName="cvextern.dll" Attributes="0" SourcePath="..\bin\Debug\cvextern.dll" SelfReg="false"/>
+    <ROW File="Emgu.CV.dll" Component_="Emgu.CV.dll" FileName="EMGUCV~1.DLL|Emgu.CV.dll" Attributes="0" SourcePath="..\bin\Debug\Emgu.CV.dll" SelfReg="false"/>
+    <ROW File="Emgu.CV.GPU.dll" Component_="Emgu.CV.GPU.dll" FileName="EMGUCV~2.DLL|Emgu.CV.GPU.dll" Attributes="0" SourcePath="..\bin\Debug\Emgu.CV.GPU.dll" SelfReg="false"/>
+    <ROW File="Emgu.CV.ML.dll" Component_="Emgu.CV.ML.dll" FileName="EMGUCV~3.DLL|Emgu.CV.ML.dll" Attributes="0" SourcePath="..\bin\Debug\Emgu.CV.ML.dll" SelfReg="false"/>
+    <ROW File="Emgu.CV.UI.dll" Component_="Emgu.CV.UI.dll" FileName="EMGUCV~4.DLL|Emgu.CV.UI.dll" Attributes="0" SourcePath="..\bin\Debug\Emgu.CV.UI.dll" SelfReg="false"/>
+    <ROW File="Emgu.CV.UI.xml" Component_="Emgu.CV.UI.xml" FileName="EMGUCV~1.XML|Emgu.CV.UI.xml" Attributes="0" SourcePath="..\bin\Debug\Emgu.CV.UI.xml" SelfReg="false"/>
+    <ROW File="Emgu.CV.xml" Component_="Emgu.CV.UI.xml" FileName="EMGUCV~2.XML|Emgu.CV.xml" Attributes="0" SourcePath="..\bin\Debug\Emgu.CV.xml" SelfReg="false"/>
+    <ROW File="Emgu.Util.dll" Component_="Emgu.Util.dll" FileName="EMGUUT~1.DLL|Emgu.Util.dll" Attributes="0" SourcePath="..\bin\Debug\Emgu.Util.dll" SelfReg="false"/>
+    <ROW File="Emgu.Util.xml" Component_="Emgu.CV.UI.xml" FileName="EMGUUT~1.XML|Emgu.Util.xml" Attributes="0" SourcePath="..\bin\Debug\Emgu.Util.xml" SelfReg="false"/>
+    <ROW File="Gdi32.dll" Component_="Gdi32.dll" FileName="Gdi32.dll" Attributes="0" SourcePath="..\bin\Debug\Gdi32.dll" SelfReg="false"/>
+    <ROW File="haarcascade_eye.xml" Component_="Emgu.CV.UI.xml" FileName="HAARCA~1.XML|haarcascade_eye.xml" Attributes="0" SourcePath="..\bin\Debug\haarcascade_eye.xml" SelfReg="false"/>
+    <ROW File="haarcascade_frontalface_default.xml" Component_="Emgu.CV.UI.xml" FileName="HAARCA~2.XML|haarcascade_frontalface_default.xml" Attributes="0" SourcePath="..\bin\Debug\haarcascade_frontalface_default.xml" SelfReg="false"/>
+    <ROW File="haarcascade_fullbody.xml" Component_="Emgu.CV.UI.xml" FileName="HAARCA~3.XML|haarcascade_fullbody.xml" Attributes="0" SourcePath="..\bin\Debug\haarcascade_fullbody.xml" SelfReg="false"/>
+    <ROW File="highgui110.dll" Component_="highgui110.dll" FileName="HIGHGU~1.DLL|highgui110.dll" Attributes="0" SourcePath="..\bin\Debug\highgui110.dll" SelfReg="false"/>
+    <ROW File="Interop.WMPLib.dll" Component_="Interop.WMPLib.dll" FileName="INTERO~1.DLL|Interop.WMPLib.dll" Attributes="0" SourcePath="..\bin\Debug\Interop.WMPLib.dll" SelfReg="false"/>
+    <ROW File="Mycroft.exe" Component_="Mycroft.exe" FileName="Mycroft.exe" Attributes="0" SourcePath="..\bin\Debug\Mycroft.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="opencv_calib3d220.dll" Component_="opencv_calib3d220.dll" FileName="OPENCV~1.DLL|opencv_calib3d220.dll" Attributes="0" SourcePath="..\bin\Debug\opencv_calib3d220.dll" SelfReg="false"/>
+    <ROW File="opencv_contrib220.dll" Component_="opencv_contrib220.dll" FileName="OPENCV~2.DLL|opencv_contrib220.dll" Attributes="0" SourcePath="..\bin\Debug\opencv_contrib220.dll" SelfReg="false"/>
+    <ROW File="opencv_core220.dll" Component_="opencv_core220.dll" FileName="OPENCV~3.DLL|opencv_core220.dll" Attributes="0" SourcePath="..\bin\Debug\opencv_core220.dll" SelfReg="false"/>
+    <ROW File="opencv_features2d220.dll" Component_="opencv_features2d220.dll" FileName="OPENCV~4.DLL|opencv_features2d220.dll" Attributes="0" SourcePath="..\bin\Debug\opencv_features2d220.dll" SelfReg="false"/>
+    <ROW File="opencv_ffmpeg220.dll" Component_="opencv_ffmpeg220.dll" FileName="OPENCV~5.DLL|opencv_ffmpeg220.dll" Attributes="0" SourcePath="..\bin\Debug\opencv_ffmpeg220.dll" SelfReg="false"/>
+    <ROW File="opencv_flann220.dll" Component_="opencv_flann220.dll" FileName="OPENCV~6.DLL|opencv_flann220.dll" Attributes="0" SourcePath="..\bin\Debug\opencv_flann220.dll" SelfReg="false"/>
+    <ROW File="opencv_gpu220.dll" Component_="opencv_gpu220.dll" FileName="OPENCV~7.DLL|opencv_gpu220.dll" Attributes="0" SourcePath="..\bin\Debug\opencv_gpu220.dll" SelfReg="false"/>
+    <ROW File="opencv_highgui220.dll" Component_="opencv_highgui220.dll" FileName="OPENCV~8.DLL|opencv_highgui220.dll" Attributes="0" SourcePath="..\bin\Debug\opencv_highgui220.dll" SelfReg="false"/>
+    <ROW File="opencv_imgproc220.dll" Component_="opencv_imgproc220.dll" FileName="OPENCV~9.DLL|opencv_imgproc220.dll" Attributes="0" SourcePath="..\bin\Debug\opencv_imgproc220.dll" SelfReg="false"/>
+    <ROW File="opencv_legacy220.dll" Component_="opencv_legacy220.dll" FileName="OPENC~10.DLL|opencv_legacy220.dll" Attributes="0" SourcePath="..\bin\Debug\opencv_legacy220.dll" SelfReg="false"/>
+    <ROW File="opencv_ml220.dll" Component_="opencv_ml220.dll" FileName="OPENC~11.DLL|opencv_ml220.dll" Attributes="0" SourcePath="..\bin\Debug\opencv_ml220.dll" SelfReg="false"/>
+    <ROW File="opencv_objdetect220.dll" Component_="opencv_objdetect220.dll" FileName="OPENC~12.DLL|opencv_objdetect220.dll" Attributes="0" SourcePath="..\bin\Debug\opencv_objdetect220.dll" SelfReg="false"/>
+    <ROW File="opencv_video220.dll" Component_="opencv_video220.dll" FileName="OPENC~13.DLL|opencv_video220.dll" Attributes="0" SourcePath="..\bin\Debug\opencv_video220.dll" SelfReg="false"/>
+    <ROW File="wininet.dll" Component_="wininet.dll" FileName="wininet.dll" Attributes="0" SourcePath="..\bin\Debug\wininet.dll" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" Languages="en" InstallationType="4" UseLargeSchema="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
+    <ROW Feature_="MainFeature" Component_="APPDIR"/>
+    <ROW Feature_="MainFeature" Component_="ProductInformation"/>
+    <ROW Feature_="MainFeature" Component_="mp3"/>
+    <ROW Feature_="MainFeature" Component_="AudioSwitcher.AudioApi.CoreAudio.dll"/>
+    <ROW Feature_="MainFeature" Component_="AudioSwitcher.AudioApi.dll"/>
+    <ROW Feature_="MainFeature" Component_="AxInterop.WMPLib.dll"/>
+    <ROW Feature_="MainFeature" Component_="cvaux110.dll"/>
+    <ROW Feature_="MainFeature" Component_="cvextern.dll"/>
+    <ROW Feature_="MainFeature" Component_="Emgu.CV.dll"/>
+    <ROW Feature_="MainFeature" Component_="Emgu.CV.GPU.dll"/>
+    <ROW Feature_="MainFeature" Component_="Emgu.CV.ML.dll"/>
+    <ROW Feature_="MainFeature" Component_="Emgu.CV.UI.dll"/>
+    <ROW Feature_="MainFeature" Component_="Emgu.CV.UI.xml"/>
+    <ROW Feature_="MainFeature" Component_="Emgu.Util.dll"/>
+    <ROW Feature_="MainFeature" Component_="Gdi32.dll"/>
+    <ROW Feature_="MainFeature" Component_="highgui110.dll"/>
+    <ROW Feature_="MainFeature" Component_="Interop.WMPLib.dll"/>
+    <ROW Feature_="MainFeature" Component_="Mycroft.exe"/>
+    <ROW Feature_="MainFeature" Component_="opencv_calib3d220.dll"/>
+    <ROW Feature_="MainFeature" Component_="opencv_contrib220.dll"/>
+    <ROW Feature_="MainFeature" Component_="opencv_core220.dll"/>
+    <ROW Feature_="MainFeature" Component_="opencv_features2d220.dll"/>
+    <ROW Feature_="MainFeature" Component_="opencv_ffmpeg220.dll"/>
+    <ROW Feature_="MainFeature" Component_="opencv_flann220.dll"/>
+    <ROW Feature_="MainFeature" Component_="opencv_gpu220.dll"/>
+    <ROW Feature_="MainFeature" Component_="opencv_highgui220.dll"/>
+    <ROW Feature_="MainFeature" Component_="opencv_imgproc220.dll"/>
+    <ROW Feature_="MainFeature" Component_="opencv_legacy220.dll"/>
+    <ROW Feature_="MainFeature" Component_="opencv_ml220.dll"/>
+    <ROW Feature_="MainFeature" Component_="opencv_objdetect220.dll"/>
+    <ROW Feature_="MainFeature" Component_="opencv_video220.dll"/>
+    <ROW Feature_="MainFeature" Component_="wininet.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="Icon.exe" SourcePath="..\Icon.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT64 OR ((VersionNT &lt;&gt; 501) OR (ServicePackLevel = 3))) AND ((VersionNT &lt;&gt; 502) OR (ServicePackLevel = 2))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>
